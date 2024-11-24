@@ -1,5 +1,7 @@
 'use server';
 
+import { auth } from '@clerk/nextjs/server';
+
 interface TransactionData {
   text: string;
   amount: number;
@@ -21,6 +23,14 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
 
   const text: string = textValue.toString(); //text as string
   const amount: number = parseFloat(amountValue.toString()); //amount as number
+
+  //get logged in user
+  const { userId } = await auth();
+
+  //check for user
+  if (!userId) {
+    return { error: 'User not found' };
+  }
 
   const transactionData: TransactionData = { text, amount };
 
