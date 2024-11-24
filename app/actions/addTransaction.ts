@@ -18,7 +18,7 @@ async function addTransaction(formData: FormData): Promise<TransactionResult> {
 
   //check for input values
   if (!textValue || textValue === '' || !amountValue) {
-    return { error: 'Please provide text and amount' };
+    return { error: 'Text or amount is missing' };
   }
 
   const text: string = textValue.toString(); //text as string
