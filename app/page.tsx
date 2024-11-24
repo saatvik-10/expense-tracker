@@ -1,6 +1,6 @@
-import Guest from '@/components/Guest';
 import { currentUser } from '@clerk/nextjs/server';
 import AddTransaction from '@/components/AddTransaction';
+import Guest from '@/components/Guest';
 
 const HomePage = async () => {
   const user = await currentUser();
