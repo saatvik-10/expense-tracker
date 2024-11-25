@@ -14,9 +14,6 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Expense Tracker',
   description: 'Track your expenses with ease',
-  icons: {
-    icon: '/favicon.ico',
-  },
 };
 
 export default function RootLayout({
