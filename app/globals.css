@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-  background: #000;
+  background: #2f7232;
   color: #fff;
 }
 
@@ -35,7 +35,7 @@ body {
 .guest button {
   border: 0;
   border-radius: 5px;
-  background: rebeccapurple;
+  background: rgb(66, 15, 15);
   color: #fff;
   padding: 0.5rem 2rem;
   cursor: pointer;
@@ -110,7 +110,7 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #2f7232;
 }
 
 .money.minus {
@@ -134,7 +134,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: rgb(66, 15, 15);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -168,7 +168,7 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid #2f7232;
 }
 
 .list li.minus {
